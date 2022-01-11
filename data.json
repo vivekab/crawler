@@ -1,0 +1,33 @@
+{
+    "news_data": {
+        "afdasdfa":{
+            "tags": [],
+            "url":"x.com/dogecoin_news1",
+            "news_time":"2021-06-19T15:31:48+00:00",
+            "status":"LOADED",
+            "source":"dogecoinnews.net"
+        },
+        "fadfew":{
+            "tags": [],
+            "url":"x.com/dogecoin_news3",
+            "news_time":"2021-06-19T15:32:48+00:00",
+            "status":"LOADED",
+            "source":"dogecoinnews.net"
+        },
+        "erafse":{
+            "tags":["dogecoin"],
+            "url":"x.com/dogecoin_news2",
+            "news_time":"2021-06-19T10:31:48+00:00",
+            "status":"PROCESSED",
+            "source":"dogecoinnews.net"
+        },
+        "eaewfd":{
+            "tags": [],
+            "url":"x.com/dogecoin_news3",
+            "news_time":"2021-06-19T15:32:48+00:00",
+            "status":"PROCESSED",
+            "source":"dogecoinnews.net"
+        }
+    },
+    "tags": ["dogecoin","shiba"]
+}

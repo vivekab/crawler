@@ -1,0 +1,50 @@
+[debug] [2021-06-19T13:48:02.757Z] ----------------------------------------------------------------------
+[debug] [2021-06-19T13:48:02.759Z] Command:       /usr/local/bin/firebase /Users/zop7719/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase init emulators
+[debug] [2021-06-19T13:48:02.759Z] CLI Version:   9.13.1
+[debug] [2021-06-19T13:48:02.759Z] Platform:      darwin
+[debug] [2021-06-19T13:48:02.759Z] Node Version:  v12.18.1
+[debug] [2021-06-19T13:48:02.760Z] Time:          Sat Jun 19 2021 19:18:02 GMT+0530 (India Standard Time)
+[debug] [2021-06-19T13:48:02.760Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-06-19T13:48:02.764Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-06-19T13:48:02.764Z] > authorizing via signed-in user (vivekbhat123.vb@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/zop7719/go/src/github.com/vivekab/crawler
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2021-06-19T13:48:18.615Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects  
+ {"projectId":"news-service","name":"news-service"}
+[debug] [2021-06-19T13:48:20.070Z] <<< HTTP RESPONSE 409 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Sat, 19 Jun 2021 13:48:19 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1227","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-06-19T13:48:20.070Z] <<< HTTP RESPONSE BODY {"error":{"code":409,"message":"Requested entity already exists","status":"ALREADY_EXISTS"}}
+[debug] [2021-06-19T13:48:20.335Z] FirebaseError: HTTP Error: 409, Requested entity already exists
+    at module.exports (/Users/zop7719/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/responseToError.js:38:12)
+    at Request._callback (/Users/zop7719/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/api.js:41:35)
+    at Request.self.callback (/Users/zop7719/.cache/firebase/tools/lib/node_modules/request/request.js:185:22)
+    at Request.emit (events.js:315:20)
+    at Request.EventEmitter.emit (domain.js:482:12)
+    at Request.<anonymous> (/Users/zop7719/.cache/firebase/tools/lib/node_modules/request/request.js:1154:10)
+    at Request.emit (events.js:315:20)
+    at Request.EventEmitter.emit (domain.js:482:12)
+    at IncomingMessage.<anonymous> (/Users/zop7719/.cache/firebase/tools/lib/node_modules/request/request.js:1076:12)
+    at Object.onceWrapper (events.js:421:28)
+    at IncomingMessage.emit (events.js:327:22)
+    at IncomingMessage.EventEmitter.emit (domain.js:482:12)
+    at endReadableNT (_stream_readable.js:1221:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+[error] 
+[error] Error: Failed to create project because there is already a project with ID news-service. Please try again with a unique project ID.
